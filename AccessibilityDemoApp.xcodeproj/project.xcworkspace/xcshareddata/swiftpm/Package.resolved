@@ -1,0 +1,15 @@
+{
+  "originHash" : "c3a24f5716542ec0885984007ae2065f31ada743c22845240176f10d81afbbde",
+  "pins" : [
+    {
+      "identity" : "audiomanager",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/robinlieb/AudioManager.git",
+      "state" : {
+        "revision" : "517c942b87a9348424a61d906f5b038f7ad71733",
+        "version" : "0.0.2"
+      }
+    }
+  ],
+  "version" : 3
+}
