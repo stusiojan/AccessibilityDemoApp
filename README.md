@@ -25,6 +25,21 @@ App is a demo containing:
     *[link to design](UX.md)
     *simplyfied core functionalities are implemented in the app
 
+### Core functionalities
+
+#### Guidance to celestial bodies
+
+#### Universe wiki
+
+#### Exploring cosmos
+
+#### Haptics demo
+
+### Third party libraries
+
+* AudioManager by Robin Lieb
+
+
 ## Authors
 
 Jan Stusio
