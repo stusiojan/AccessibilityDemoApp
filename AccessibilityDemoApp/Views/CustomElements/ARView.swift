@@ -15,12 +15,16 @@ struct CustomARView: UIViewRepresentable {
     var onObjectClose: (String) -> Void
      
     func makeUIView(context: Context) -> ARView {
-        let arView = ARView(frame: .zero)
+        let arView = ARView(frame: .zero, cameraMode: .ar, automaticallyConfigureSession: true)
          
         // Setup AR session
         let config = ARWorldTrackingConfiguration()
+        config.planeDetection = [.horizontal, .vertical]
+        config.environmentTexturing = .automatic
+        config.isAutoFocusEnabled = true
+        
         arView.session.run(config)
-         
+        
         addCelestialBodies(to: arView)
         setupDistanceChecking(for: arView)
          
@@ -30,36 +34,53 @@ struct CustomARView: UIViewRepresentable {
     func updateUIView(_ uiView: ARView, context: Context) {}
      
     private func addCelestialBodies(to arView: ARView) {
-        // Create and position Moon
+        // Moon
         let moonAnchor = AnchorEntity(world: [2, 0, -3])
         let moonMesh = MeshResource.generateSphere(radius: 0.2)
-        let moonMaterial = SimpleMaterial(color: .gray, roughness: 0.3, isMetallic: false)
+        var moonMaterial = SimpleMaterial()
+        moonMaterial.color = PhysicallyBasedMaterial.BaseColor(tint: .gray)
+        moonMaterial.roughness = .float(0.5)
+        moonMaterial.metallic = .float(0.0)
         let moonEntity = ModelEntity(mesh: moonMesh, materials: [moonMaterial])
         moonEntity.name = "moon"
+        
+        // Add physics body for better interaction
+        moonEntity.collision = CollisionComponent(shapes: [.generateSphere(radius: 0.2)])
+        moonEntity.generateCollisionShapes(recursive: true)
         moonAnchor.addChild(moonEntity)
-         
-        // Create and position Venus
+        
+        // Venus
         let venusAnchor = AnchorEntity(world: [-1, 0, -2])
         let venusMesh = MeshResource.generateSphere(radius: 0.15)
-        let venusMaterial = SimpleMaterial(color: .orange, roughness: 0.3, isMetallic: false)
+        var venusMaterial = SimpleMaterial()
+        venusMaterial.color = PhysicallyBasedMaterial.BaseColor(tint: .yellow)
+        venusMaterial.roughness = .float(0.5)
+        venusMaterial.metallic = .float(0.0)
         let venusEntity = ModelEntity(mesh: venusMesh, materials: [venusMaterial])
         venusEntity.name = "venus"
+        venusEntity.collision = CollisionComponent(shapes: [.generateSphere(radius: 0.15)])
+        venusEntity.generateCollisionShapes(recursive: true)
         venusAnchor.addChild(venusEntity)
-         
-        // Create and position Mars
+        
+        // Mars
         let marsAnchor = AnchorEntity(world: [0, 1, -4])
         let marsMesh = MeshResource.generateSphere(radius: 0.18)
-        let marsMaterial = SimpleMaterial(color: .red, roughness: 0.3, isMetallic: false)
+        var marsMaterial = SimpleMaterial()
+        marsMaterial.color = PhysicallyBasedMaterial.BaseColor(tint: .red)
+        marsMaterial.roughness = .float(0.5)
+        marsMaterial.metallic = .float(0.0)
         let marsEntity = ModelEntity(mesh: marsMesh, materials: [marsMaterial])
         marsEntity.name = "mars"
+        marsEntity.collision = CollisionComponent(shapes: [.generateSphere(radius: 0.18)])
+        marsEntity.generateCollisionShapes(recursive: true)
         marsAnchor.addChild(marsEntity)
-         
+        
         // Add all anchors to the scene
         arView.scene.addAnchor(moonAnchor)
         arView.scene.addAnchor(venusAnchor)
         arView.scene.addAnchor(marsAnchor)
     }
-     
+    
     private func setupDistanceChecking(for arView: ARView) {
         Timer.scheduledTimer(withTimeInterval: 0.1, repeats: true) { _ in
             guard let camera = arView.session.currentFrame?.camera else { return }
@@ -92,7 +113,6 @@ struct CustomARView: UIViewRepresentable {
                         
                         if distanceToObject < 1.5 { // 1.5 meters threshold
                             onObjectClose(modelEntity.name)
-                            print("checked")
                         }
                     }
                 }

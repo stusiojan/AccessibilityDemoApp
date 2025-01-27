@@ -38,12 +38,15 @@ struct ARSceneView: View {
                 .padding(.bottom, 20)
             }
         }
+        .padding(5)
+        .clipShape(.capsule)
 //        .edgesIgnoringSafeArea(.all)
     }
      
     func myFunction(_ cellestialBody: String) {
         print("Object \(cellestialBody) is close and centered!")
         lastDetectedObject = cellestialBody
-        // Add custom functionality here
+        // TODO: Add haptic feedback
+        // TODO: Play sound
     }
 }
