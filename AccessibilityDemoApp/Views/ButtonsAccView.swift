@@ -17,7 +17,7 @@ struct ButtonsAccView: View {
             Button {
                 // do something
             } label: {
-                Label("Button", systemImage: "scribble")
+                Label("Do nothing", systemImage: "scribble")
             }
 
         }

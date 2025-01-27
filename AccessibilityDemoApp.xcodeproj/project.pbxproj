@@ -7,18 +7,72 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3D0B21EE2D480D1A00C3E16C /* ADAAppIntents.appex in Embed ExtensionKit Extensions */ = {isa = PBXBuildFile; fileRef = 3D0B21E52D480D1A00C3E16C /* ADAAppIntents.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		3DFAF0492D46DA7C00EAA1F8 /* AudioManager in Frameworks */ = {isa = PBXBuildFile; productRef = 3DFAF0482D46DA7C00EAA1F8 /* AudioManager */; };
 		3DFAF0522D46EA9300EAA1F8 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 3DFAF0512D46EA9300EAA1F8 /* README.md */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		3D0B21EC2D480D1A00C3E16C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3DFCE0AB2D402E0300630C4C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3D0B21E42D480D1A00C3E16C;
+			remoteInfo = ADAAppIntents;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		3D0B21F32D480D1A00C3E16C /* Embed ExtensionKit Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(EXTENSIONS_FOLDER_PATH)";
+			dstSubfolderSpec = 16;
+			files = (
+				3D0B21EE2D480D1A00C3E16C /* ADAAppIntents.appex in Embed ExtensionKit Extensions */,
+			);
+			name = "Embed ExtensionKit Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		3D0B21E52D480D1A00C3E16C /* ADAAppIntents.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.extensionkit-extension"; includeInIndex = 0; path = ADAAppIntents.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		3DFAF0512D46EA9300EAA1F8 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		3DFCE0B32D402E0300630C4C /* AccessibilityDemoApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AccessibilityDemoApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		3D0B21EF2D480D1A00C3E16C /* Exceptions for "ADAAppIntents" folder in "ADAAppIntents" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = 3D0B21E42D480D1A00C3E16C /* ADAAppIntents */;
+		};
+		3D0B21FB2D481C7E00C3E16C /* Exceptions for "AccessibilityDemoApp" folder in "ADAAppIntents" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Managers/Navigator.swift,
+			);
+			target = 3D0B21E42D480D1A00C3E16C /* ADAAppIntents */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
 /* Begin PBXFileSystemSynchronizedRootGroup section */
+		3D0B21E62D480D1A00C3E16C /* ADAAppIntents */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				3D0B21EF2D480D1A00C3E16C /* Exceptions for "ADAAppIntents" folder in "ADAAppIntents" target */,
+			);
+			path = ADAAppIntents;
+			sourceTree = "<group>";
+		};
 		3DFCE0B52D402E0300630C4C /* AccessibilityDemoApp */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				3D0B21FB2D481C7E00C3E16C /* Exceptions for "AccessibilityDemoApp" folder in "ADAAppIntents" target */,
+			);
 			explicitFolders = (
 				AHAP,
 			);
@@ -28,6 +82,13 @@
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		3D0B21E22D480D1A00C3E16C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		3DFCE0B02D402E0300630C4C /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -43,6 +104,7 @@
 			isa = PBXGroup;
 			children = (
 				3DFCE0B52D402E0300630C4C /* AccessibilityDemoApp */,
+				3D0B21E62D480D1A00C3E16C /* ADAAppIntents */,
 				3DFCE0B42D402E0300630C4C /* Products */,
 				3DFAF0512D46EA9300EAA1F8 /* README.md */,
 			);
@@ -52,6 +114,7 @@
 			isa = PBXGroup;
 			children = (
 				3DFCE0B32D402E0300630C4C /* AccessibilityDemoApp.app */,
+				3D0B21E52D480D1A00C3E16C /* ADAAppIntents.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -59,6 +122,28 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		3D0B21E42D480D1A00C3E16C /* ADAAppIntents */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3D0B21F02D480D1A00C3E16C /* Build configuration list for PBXNativeTarget "ADAAppIntents" */;
+			buildPhases = (
+				3D0B21E12D480D1A00C3E16C /* Sources */,
+				3D0B21E22D480D1A00C3E16C /* Frameworks */,
+				3D0B21E32D480D1A00C3E16C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				3D0B21E62D480D1A00C3E16C /* ADAAppIntents */,
+			);
+			name = ADAAppIntents;
+			packageProductDependencies = (
+			);
+			productName = ADAAppIntents;
+			productReference = 3D0B21E52D480D1A00C3E16C /* ADAAppIntents.appex */;
+			productType = "com.apple.product-type.extensionkit-extension";
+		};
 		3DFCE0B22D402E0300630C4C /* AccessibilityDemoApp */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3DFCE0C12D402E0500630C4C /* Build configuration list for PBXNativeTarget "AccessibilityDemoApp" */;
@@ -66,10 +151,12 @@
 				3DFCE0AF2D402E0300630C4C /* Sources */,
 				3DFCE0B02D402E0300630C4C /* Frameworks */,
 				3DFCE0B12D402E0300630C4C /* Resources */,
+				3D0B21F32D480D1A00C3E16C /* Embed ExtensionKit Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				3D0B21ED2D480D1A00C3E16C /* PBXTargetDependency */,
 			);
 			fileSystemSynchronizedGroups = (
 				3DFCE0B52D402E0300630C4C /* AccessibilityDemoApp */,
@@ -92,6 +179,9 @@
 				LastSwiftUpdateCheck = 1620;
 				LastUpgradeCheck = 1620;
 				TargetAttributes = {
+					3D0B21E42D480D1A00C3E16C = {
+						CreatedOnToolsVersion = 16.2;
+					};
 					3DFCE0B22D402E0300630C4C = {
 						CreatedOnToolsVersion = 16.2;
 					};
@@ -115,11 +205,19 @@
 			projectRoot = "";
 			targets = (
 				3DFCE0B22D402E0300630C4C /* AccessibilityDemoApp */,
+				3D0B21E42D480D1A00C3E16C /* ADAAppIntents */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		3D0B21E32D480D1A00C3E16C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		3DFCE0B12D402E0300630C4C /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -131,6 +229,13 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		3D0B21E12D480D1A00C3E16C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		3DFCE0AF2D402E0300630C4C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -140,11 +245,71 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		3D0B21ED2D480D1A00C3E16C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3D0B21E42D480D1A00C3E16C /* ADAAppIntents */;
+			targetProxy = 3D0B21EC2D480D1A00C3E16C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
+		3D0B21F12D480D1A00C3E16C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 9SA9YW222L;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ADAAppIntents/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = ADAAppIntents;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.janstusio.AccessibilityDemoApp.ADAAppIntents;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3D0B21F22D480D1A00C3E16C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 9SA9YW222L;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ADAAppIntents/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = ADAAppIntents;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.janstusio.AccessibilityDemoApp.ADAAppIntents;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 		3DFCE0BF2D402E0500630C4C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				APP_URL_SCHEME = "";
+				"APP_URL_SCHEME[arch=*]" = "accdea-dev";
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
@@ -208,6 +373,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				APP_URL_SCHEME = "";
+				"APP_URL_SCHEME[arch=*]" = accdea;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
@@ -271,6 +438,7 @@
 				DEVELOPMENT_TEAM = 9SA9YW222L;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "For AR View";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -301,6 +469,7 @@
 				DEVELOPMENT_TEAM = 9SA9YW222L;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "For AR View";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -323,6 +492,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		3D0B21F02D480D1A00C3E16C /* Build configuration list for PBXNativeTarget "ADAAppIntents" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3D0B21F12D480D1A00C3E16C /* Debug */,
+				3D0B21F22D480D1A00C3E16C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		3DFCE0AE2D402E0300630C4C /* Build configuration list for PBXProject "AccessibilityDemoApp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

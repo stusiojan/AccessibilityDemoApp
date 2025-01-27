@@ -21,20 +21,6 @@ class HapticsManager {
         createEngine()
     }
     
-//    private func prepareHapticEngine() {
-//        guard supportsHaptics else {
-//            print("Device does not support haptics")
-//            return
-//        }
-//        
-//        do {
-//            engine = try CHHapticEngine()
-//            try engine?.start()
-//        } catch let error {
-//            fatalError("Engine Creation Error: \(error)")
-//        }
-//    }
-    
     private func createEngine() {
         do {
             let audioSession = AVAudioSession.sharedInstance()

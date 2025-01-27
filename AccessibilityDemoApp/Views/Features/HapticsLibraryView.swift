@@ -30,6 +30,7 @@ struct HapticsLibraryView: View {
         }
         .largeStyle()
         
+        // In voiceover there is only vibration
         Button {
             HapticsManager.shared.playHapticsFile(named: "AHAP/Drums")
         } label: {

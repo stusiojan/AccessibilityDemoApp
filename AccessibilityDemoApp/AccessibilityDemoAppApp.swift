@@ -11,7 +11,7 @@ import SwiftUI
 struct AccessibilityDemoAppApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ContentView(navigator: Navigator.shared)
         }
     }
 }

@@ -10,6 +10,7 @@ import SwiftUI
 struct StarBrowsingView: View {
     var body: some View {
         Text("Browse!")
+        ARSceneView()
     }
 }
 

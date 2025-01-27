@@ -7,6 +7,10 @@
 
 import SwiftUI
 
+/// Inaccessable UX
+/// * moving elements
+/// * no tags on buttons
+/// * 
 struct ButtonsView: View {
     @State private var isTextShown: Bool = false
     private let text: String = """
@@ -27,6 +31,7 @@ struct ButtonsView: View {
     """
     
     var body: some View {
+        // VoiceOver reads it as "show! image" 
         CustomButton(sysImageTitle: "eye.fill", action: toggleText())
         
         if isTextShown {
