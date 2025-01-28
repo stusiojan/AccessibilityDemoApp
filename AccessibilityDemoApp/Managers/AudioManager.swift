@@ -13,6 +13,10 @@ extension AudioManager {
     func playVenusSound(trackNumber: Int = 1, type: AudioFormat) {
         AudioManager.shared.playOrStopAudio(audioFileName: "Venus\(trackNumber)", audioFileType: type.rawValue)
     }
+    
+    func playShortDesription(_ name: String, type: AudioFormat = .m4a) {
+        AudioManager.shared.playOrStopAudio(audioFileName: "\(name)2", audioFileType: type.rawValue)
+    }
 }
 
 enum AudioFormat: String {

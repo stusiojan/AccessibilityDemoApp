@@ -11,7 +11,7 @@ struct FeatureView: View {
     var body: some View {
         NavigationStack{
             NavigationLink(destination: StarBrowsingView()) {
-                Label("Browse stars", systemImage: "sparkles")
+                Label("Explore sky", systemImage: "sparkles")
                     .labelStyle(.titleAndIcon)
             }
             .largeStyle()
