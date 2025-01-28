@@ -11,7 +11,7 @@ import AudioManager
 
 extension AudioManager {
     func playVenusSound(trackNumber: Int = 1, type: AudioFormat) {
-        AudioManager.shared.playOrStopAudio(audioFileName: "Venus\(trackNumber)", audioFileType: type.rawValue)
+        AudioManager.shared.playOrStopAudio(audioFileName: "venus\(trackNumber)", audioFileType: type.rawValue)
     }
     
     func playShortDesription(_ name: String, type: AudioFormat = .m4a) {
