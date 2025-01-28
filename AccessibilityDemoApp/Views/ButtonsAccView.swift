@@ -9,17 +9,31 @@ import SwiftUI
 
 /// Accessible UX
 struct ButtonsAccView: View {
+    @State private var isTextShown: Bool = false
+    
     var body: some View {
-        NavigationStack {
-//            NavigationLink("Welcome view", destination: ContentView())
-//                .accessibilityLabel(Text("Welcome view"))
-            
-            Button {
-                // do something
-            } label: {
-                Label("Do nothing", systemImage: "scribble")
+        Button {
+            isTextShown.toggle()
+        } label: {
+            Label(
+                isTextShown
+                ? "Hide song lyrics"
+                : "Show song lyrics",
+                systemImage: "eye.fill"
+            )
+            .largeStyle(
+                backgroundColor:
+                    isTextShown
+                    ? .pink
+                    : .blue,
+                foregroundColor: .white
+            )
+        }
+        Spacer()
+        if isTextShown {
+            ScrollView {
+                SongText().padding()
             }
-
         }
     }
 }

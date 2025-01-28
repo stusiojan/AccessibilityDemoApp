@@ -24,7 +24,7 @@ public class AudioEngine {
     
     private init() {
         engine.attach(volumeNode)
-        volumeNode.volume = 1.0
+        volumeNode.volume = 0.5
     }
     
     public func play(_ name: String) throws {
@@ -68,7 +68,7 @@ public class AudioEngine {
             
             for frame in 0..<Int(frameCount) {
                 let value = sin(2.0 * .pi * self.frequency * self.phase / self.sampleRate)
-                ptr?[frame] = Float(value)
+                ptr?[frame] = Float(value) + self.volumeNode.volume
                 self.phase += 1.0
                 if self.phase >= self.sampleRate {
                     self.phase -= self.sampleRate
@@ -86,7 +86,7 @@ public class AudioEngine {
             engine.connect(toneSourceNode, to: speedControl, format: format)
             engine.connect(speedControl, to: pitchControl, format: format)
             engine.connect(pitchControl, to: engine.mainMixerNode, format: format)
-            engine.connect(volumeNode, to: engine.mainMixerNode, format: format)
+//            engine.connect(volumeNode, to: engine.mainMixerNode, format: format)
             
             try engine.start()
         }

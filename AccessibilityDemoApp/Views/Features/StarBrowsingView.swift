@@ -8,9 +8,26 @@
 import SwiftUI
 
 struct StarBrowsingView: View {
+    @State private var isShowingInstructions: Bool = false
+    
     var body: some View {
-        Text("Explore sky")
-        ARSceneView(mode: .exploration)
+        NavigationStack {
+            Text("Explore sky").font(.title)
+            ARSceneView(mode: .exploration)
+                .toolbar {
+                    ToolbarItem(placement: .topBarTrailing) {
+                        Button {
+                            isShowingInstructions = true
+                        } label: {
+                            Label("Show instruction", systemImage: "info.circle")
+                                .labelStyle(.iconOnly)
+                        }
+                    }
+                }
+                .sheet(isPresented: $isShowingInstructions) {
+                    InfoView(instructionMode: .explore)
+                }
+        }
     }
 }
 
