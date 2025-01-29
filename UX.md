@@ -17,3 +17,5 @@ some text
 
 <img width="250" alt="AccDA_search-mode-V" src="https://github.com/user-attachments/assets/46f86d01-601b-4dc0-8107-d326aaf4e105">
 
+<img width="250" alt="krzywa-glosnosci" src="https://github.com/user-attachments/assets/3147c4d8-b013-4e09-a617-f9371b02b096">
+<img width="250" alt="ubytek-sluchu" src="https://github.com/user-attachments/assets/0f976d1c-27a1-4ea7-a652-ee0d85d87dd7">
