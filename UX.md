@@ -17,5 +17,23 @@ some text
 
 <img width="250" alt="AccDA_search-mode-V" src="https://github.com/user-attachments/assets/46f86d01-601b-4dc0-8107-d326aaf4e105">
 
+
+## Udźwiękowienie
+
+Ubytek słuchu naturalnie postępuje wraz z wiekiem. Na wykresie z portalu Audiofon.pl przedstawiającym ubytki u kobiet na przestrzeli lat widzimy, że dotyczy on głównie wysokich częstotliwości. U mężczyzn te zmiany są statystycznie jeszcze głębsze. Dlatego dobierając dźwięki warto wziąć to pod uwagę.
+
 <img width="250" alt="krzywa-glosnosci" src="https://github.com/user-attachments/assets/3147c4d8-b013-4e09-a617-f9371b02b096">
+
+Kolejnym czynnikiem, którym należy się sugerować tworząc udźwiękowienie aplikacji jest wrażeniowe poczucie głośności w zależności od wysokości tonalnej sygnałów dźwiękowych. Na krzywych akustycznych prezentowanych na stronie internetowej Centralnego Instytutu Ochrony Pracy możemy dostrzec różnicę w słyszalności niskich tonów i wysokich.
+
+Niskie dźwięki powinny być odtwarzane głośniej, aby były tak samo słyszalne jak wyższe. W naszej aplikacji używamy niskiego tonu (niecałe 200Hz) do nawigowania do wybranego ciała astralnego. Wraz ze zmniejszającą się odległością częstotliwość jest zwiększana, a co za tym idzie wrażenie głośności się zwiększa. Nadal jednak jest to stosunkowo niski dźwięk, aby osoby z uszkodzeniami słuchu miały szanse je usłyszeć.
+
 <img width="250" alt="ubytek-sluchu" src="https://github.com/user-attachments/assets/0f976d1c-27a1-4ea7-a652-ee0d85d87dd7">
+
+Lektor wybrany do czytania informacji o kosmosie z pakietu ElevenLabs ma niski głos z tych samych względów.
+
+## Haptyka
+
+Projektując inkluzywną aplikację dla jak największego grona odbiorców ważne jest komunikowanie dla możliwie wielu zmysłów. Silnik haptyczny telefonów serii iPhone, na które dedykowana jest nasza aplikacja pozwala na odtwarzanie zróżnicowanych wzorów haptycznych.
+
+Nawigowanie do wybranego obiektu astralnego poza komunikacją dźwiękową, która była opisana w punkcie powyżej jest wzbogacona o haptykę, która pomoże osobom z poważnymi uszkodzeniami słuchu i wzroku używać tej funkcjonalności.
