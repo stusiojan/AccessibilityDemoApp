@@ -22,8 +22,8 @@ This project was developed as part of the WPAM course at the Warsaw University o
 App is a demo containing:
 1. Comparison of accessible and inaccessible design showcasing good SwiftUI practices
 2. UX design of the accessible app for exploring the universe:
-    *[link to design](UX.md)
-    *simplyfied core functionalities are implemented in the app
+    * [link to design](UX.md)
+    * simplyfied core functionalities are implemented in the app
 
 ### Core functionalities
 
