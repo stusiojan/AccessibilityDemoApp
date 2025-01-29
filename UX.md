@@ -2,13 +2,13 @@
 
 Ubytek słuchu naturalnie postępuje wraz z wiekiem. Na wykresie z portalu Audiofon.pl przedstawiającym ubytki u kobiet na przestrzeli lat widzimy, że dotyczy on głównie wysokich częstotliwości. U mężczyzn te zmiany są statystycznie jeszcze głębsze. Dlatego dobierając dźwięki warto wziąć to pod uwagę.
 
-<img width="250" alt="krzywa-glosnosci" src="https://github.com/user-attachments/assets/3147c4d8-b013-4e09-a617-f9371b02b096">
+<img width="500" alt="krzywa-glosnosci" src="https://github.com/user-attachments/assets/3147c4d8-b013-4e09-a617-f9371b02b096">
 
 Kolejnym czynnikiem, którym należy się sugerować tworząc udźwiękowienie aplikacji jest wrażeniowe poczucie głośności w zależności od wysokości tonalnej sygnałów dźwiękowych. Na krzywych akustycznych prezentowanych na stronie internetowej Centralnego Instytutu Ochrony Pracy możemy dostrzec różnicę w słyszalności niskich tonów i wysokich.
 
 Niskie dźwięki powinny być odtwarzane głośniej, aby były tak samo słyszalne jak wyższe. W naszej aplikacji używamy niskiego tonu (niecałe 200Hz) do nawigowania do wybranego ciała astralnego. Wraz ze zmniejszającą się odległością częstotliwość jest zwiększana, a co za tym idzie wrażenie głośności się zwiększa. Nadal jednak jest to stosunkowo niski dźwięk, aby osoby z uszkodzeniami słuchu miały szanse je usłyszeć.
 
-<img width="250" alt="ubytek-sluchu" src="https://github.com/user-attachments/assets/0f976d1c-27a1-4ea7-a652-ee0d85d87dd7">
+<img width="500" alt="ubytek-sluchu" src="https://github.com/user-attachments/assets/0f976d1c-27a1-4ea7-a652-ee0d85d87dd7">
 
 Lektorzy wybrani do czytania informacji o kosmosie z pakietu ElevenLabs mają niski głos z tych samych względów.
 
@@ -39,6 +39,9 @@ są wszystkie gwiazdy, przy minimalnej - tylko te najjaśniejsze, tworzące gwia
 
 Na dole sfery niebieskiej wyświetlany jest półprzezroczysty obszar pod horyzontem. Po wycelowaniu poniżej horyzontu, zwracany jest jednolity sygnał haptyczny o niskiej intensywności, oraz komunikat głosowy. Horyzont pozostaje domyślnie włączony, można go wyłączyć z poziomu ustawień.
 
+<img width="250" alt="tryb_gwiazd" src="https://github.com/user-attachments/assets/e42c05d3-c2c6-438a-a5b7-f68f22bc2116">
+
+<img width="700" alt="wykresy_gwiazdy" src="https://github.com/user-attachments/assets/b6e120c2-6b94-4d6b-b30e-f6e4df9f5050">
 
 2. Tryb oglądania gwiazdozbiorów
 
@@ -52,6 +55,9 @@ W górnym polu tekstowym wyświetlane są polska oraz łacińska nazwa gwiazdozb
 
 Występuje również horyzont - analogicznie jak w trybie oglądania gwiazd, również możliwy do wyłączenia w ustawieniach.
 
+<img width="250" alt="tryb_konstelacji" src="https://github.com/user-attachments/assets/d15ac4aa-28f7-4da7-8c5b-e01d1e9a04d6">
+
+<img width="700" alt="wykresy_konstelacje" src="https://github.com/user-attachments/assets/a5c429b1-7a74-4887-bb2a-35e6fc380937">
 
 3. Tryb szukania
 
@@ -66,6 +72,8 @@ W przypadku szukania gwiazdozbiorów, występuje haptyka z trybu oglądania gwia
 
 Po odnalezieniu obiektu, zwracany jest komunikat głosowy oraz haptyczny, a aplikacja przechodzi w tryb oglądania gwiazd lub konstelacji - w zależności od tego, jaki obiekt był szukany.
 
+<img width="500" alt="tryb_szukania" src="https://github.com/user-attachments/assets/52e87813-73c1-4d60-b8e6-3942c1d5b91a">
+<img width="500" alt="wykresy_szukaj" src="https://github.com/user-attachments/assets/f80217ab-49de-4dfb-bc05-750ebc0a574f">
 
 4. Tryb ustawień
 
@@ -73,14 +81,4 @@ Po wejściu do trybu ustawień, pole robocze ze sferą niebieską znika, i użyt
 
 Oprócz ustawień, na dole cały czas wyświetlany jest pasek wyboru trybu, oraz przycisk "Powrót" w lewym górnym rogu, co pozwala na intuicyjne wyjście z ustawień, na dwa sposoby.
 
-
-
-
-
-
-
-
-
-
-
-
+<img width="250" alt="ustawienia" src="https://github.com/user-attachments/assets/c2a115b2-3b84-47d6-bf5e-67333a86ddfd">
